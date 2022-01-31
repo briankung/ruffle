@@ -5,7 +5,7 @@ RSpec.describe Ruffle do
     expect(Ruffle::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "has a #shuffle method" do
+    expect(Ruffle).to respond_to(:shuffle)
   end
 end
