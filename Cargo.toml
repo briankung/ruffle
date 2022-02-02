@@ -5,4 +5,9 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
+rand = "0.8.4"
+rb-sys = { git = "https://github.com/ianks/rb-sys", tag = "v0.3.0" }
